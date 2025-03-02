@@ -1,0 +1,17 @@
+<map version="1.0">
+   <mapID target="main" url="html/main.html" />
+   
+   <mapID target="informes" url="html/informes.html" />
+   
+   <mapID target="introNaveEspacial" url="html/introNaveEspacial.html" />
+   <mapID target="agregarNaveEspacial" url="html/agregarNaveEspacial.html" />
+   <mapID target="eliminarNaveEspacial" url="html/eliminarNaveEspacial.html" />
+   
+   <mapID target="introTripulante" url="html/introTripulante.html" />
+   <mapID target="agregarTripulante" url="html/agregarTripulante.html" />
+   <mapID target="eliminarTripulante" url="html/eliminarTripulante.html" />
+   
+   <mapID target="introMision" url="html/introMision.html" />
+   <mapID target="agregarMision" url="html/agregarMision.html" />
+   <mapID target="eliminarMision" url="html/eliminarMision.html" />
+</map>

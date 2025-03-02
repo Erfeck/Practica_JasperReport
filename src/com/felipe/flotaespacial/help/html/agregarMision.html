@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agregar una Misión</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 20px;
+      }
+      h1 {
+        color: #2c3e50;
+      }
+      h2 {
+        color: #34495e;
+      }
+      code {
+        background-color: #f4f4f4;
+        padding: 5px;
+        border-radius: 5px;
+        font-family: "Courier New", Courier, monospace;
+      }
+      .note {
+        background-color: #e8f4f8;
+        padding: 10px;
+        border-left: 5px solid #3498db;
+        margin: 10px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Agregar una Misión</h1>
+    <p>
+      Para agregar una misión en el sistema, sigue los siguientes pasos:
+    </p>
+
+    <div class="note">
+        <p>
+          <strong>Nota:</strong> Asegúrate de que todos los campos estén
+          correctamente llenados antes de intentar agregar una misión. Si algún
+          campo está vacío o contiene datos inválidos, el sistema mostrará un
+          mensaje de error y no se agregará la misión.
+        </p>
+      </div>
+
+    <h2>1. Verificar Campos Vacíos</h2>
+    <p>
+      Antes de agregar una misión, el sistema verifica que todos los campos
+      requeridos estén llenos. Si algún campo está vacío, se mostrará un mensaje
+      de error.
+    </p>
+
+    <h2>2. Obtener los Datos de la Misión</h2>
+    <p>El sistema obtiene los datos de la misión desde la interfaz de usuario:</p>
+    <ul>
+      <li>
+        <strong>Descripción de la Misión:</strong> Se obtiene del área de texto.
+      </li>
+      <li>
+        <strong>Estado de la Misión:</strong> Se obtiene del comboBox, puede ser -> [Completada, En Progreso, Fallida]
+      </li>
+      <li>
+        <strong>Nave Asignada:</strong> Se obtiene del comboBox de naves disponibles. El sistema extrae el ID de la nave seleccionada.
+      </li>
+    </ul>
+
+    <h2>3. Insertar la Misión en el Modelo</h2>
+    <p>
+      Una vez que los datos han sido validados, la misión se inserta en la base de datos junto con su estado y el ID de la nave asignada.
+    </p>
+
+    <h2>4. Limpiar Campos</h2>
+    <p>
+      Después de agregar la misión, los campos de la interfaz se limpian para permitir la entrada de nuevos datos.
+    </p>
+  </body>
+</html>

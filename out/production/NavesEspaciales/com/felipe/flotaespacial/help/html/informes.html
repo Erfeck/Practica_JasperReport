@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Informes</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 20px;
+      }
+      h1 {
+        color: #2c3e50;
+      }
+      h2 {
+        color: #34495e;
+      }
+      code {
+        background-color: #f4f4f4;
+        padding: 5px;
+        border-radius: 5px;
+        font-family: "Courier New", Courier, monospace;
+      }
+      .note {
+        background-color: #e8f4f8;
+        padding: 10px;
+        border-left: 5px solid #3498db;
+        margin: 10px 0;
+      }
+      .info-box {
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        padding: 10px;
+        border-radius: 5px;
+        margin: 10px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Informes</h1>
+    <p>
+      En esta sección se explica cómo generar informes y gráficos sobre naves, tripulantes y misiones.
+    </p>
+
+    <div class="note">
+      <p>
+        <strong>Nota:</strong> Asegúrate de que los datos estén correctamente cargados en la base de datos para obtener informes precisos.
+      </p>
+    </div>
+
+    <h2>1. Listar Naves</h2>
+    <p>
+      Al pulsar el botón "Listar Naves", se generará un informe con todas las naves espaciales registradas en la base de datos.
+    </p>
+    <div class="info-box">
+      <p><strong>Informe generado:</strong> Informe1_Naves_Espaciales.jasper</p>
+    </div>
+
+    <h2>2. Listar Tripulantes</h2>
+    <p>
+      Al pulsar el botón "Listar Tripulantes", se generará un informe con todos los tripulantes registrados en la base de datos.
+    </p>
+    <div class="info-box">
+      <p><strong>Informe generado:</strong> Informe2_Tripulantes.jasper</p>
+    </div>
+
+    <h2>3. Listar Tripulantes por Nave</h2>
+    <p>
+      Al pulsar el botón "Listar Tripulantes por Nave", se generará un informe que muestra los tripulantes asignados a cada nave.
+    </p>
+    <div class="info-box">
+      <p><strong>Informe generado:</strong> Informe3_TripulantesPorNave.jasper</p>
+    </div>
+
+    <h2>4. Listar Misiones por Estado</h2>
+    <p>
+      Al pulsar el botón "Listar Misiones por Estado", se generará un informe que clasifica las misiones según su estado (Completada, En Progreso, Fallida).
+    </p>
+    <div class="info-box">
+      <p><strong>Informe generado:</strong> Informe4_MisionesPorEstado.jasper</p>
+    </div>
+
+    <h2>5. Listar Misiones de una Nave</h2>
+    <p>
+      Al pulsar el botón "Listar Misiones de una Nave", se solicitará el ID de la nave. Luego, se generará un informe con las misiones asignadas a esa nave.
+    </p>
+    <div class="info-box">
+      <p><strong>Informe generado:</strong> Informe5_MisionesDeUnaNave.jasper</p>
+      <p><strong>Parámetro requerido:</strong> ID de la nave (numérico).</p>
+    </div>
+
+    <h2>6. Listar Tripulación por Rango</h2>
+    <p>
+      Al pulsar el botón "Listar Tripulación por Rango", se solicitará el rango del tripulante (Capitán, Ingeniero, Piloto). Luego, se generará un informe con los tripulantes que tienen ese rango.
+    </p>
+    <div class="info-box">
+      <p><strong>Informe generado:</strong> Informe6_TripulantesPorRango.jasper</p>
+      <p><strong>Parámetro requerido:</strong> Rango del tripulante (texto).</p>
+    </div>
+
+    <h2>7. Gráfico de Rangos de Tripulantes</h2>
+    <p>
+      Al pulsar el botón "Gráfico 1", se generará un gráfico que muestra la distribución de los tripulantes según su rango.
+    </p>
+    <div class="info-box">
+      <p><strong>Gráfico generado:</strong> Grafico1_RangoTripulantes.jasper</p>
+    </div>
+
+    <h2>8. Gráfico de Estados de Misiones</h2>
+    <p>
+      Al pulsar el botón "Gráfico 2", se generará un gráfico que muestra la distribución de las misiones según su estado.
+    </p>
+    <div class="info-box">
+      <p><strong>Gráfico generado:</strong> Grafico2_EstadoMisiones.jasper</p>
+    </div>
+  </body>
+</html>

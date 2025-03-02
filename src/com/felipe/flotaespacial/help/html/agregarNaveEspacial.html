@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agregar una Nave Espacial</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 20px;
+      }
+      h1 {
+        color: #2c3e50;
+      }
+      h2 {
+        color: #34495e;
+      }
+      code {
+        background-color: #f4f4f4;
+        padding: 5px;
+        border-radius: 5px;
+        font-family: "Courier New", Courier, monospace;
+      }
+      .note {
+        background-color: #e8f4f8;
+        padding: 10px;
+        border-left: 5px solid #3498db;
+        margin: 10px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Agregar una Nave Espacial</h1>
+    <p>
+      Para agregar una nave espacial en el sistema, sigue los siguientes pasos:
+    </p>
+
+    <div class="note">
+        <p>
+          <strong>Nota:</strong> Asegúrate de que todos los campos estén
+          correctamente llenados antes de intentar agregar una nave. Si algún
+          campo está vacío o contiene datos inválidos, el sistema mostrará un
+          mensaje de error y no se agregará la nave.
+        </p>
+      </div>
+
+    <h2>1. Verificar Campos Vacíos</h2>
+    <p>
+      Antes de agregar una nave, el sistema verifica que todos los campos
+      requeridos estén llenos. Si algún campo está vacío, se mostrará un mensaje
+      de error.
+    </p>
+
+    <h2>2. Obtener los Datos de la Nave</h2>
+    <p>El sistema obtiene los datos de la nave desde la interfaz de usuario:</p>
+    <ul>
+      <li>
+        <strong>Nombre de la Nave:</strong> Se obtiene del campo de texto
+      </li>
+      <li>
+        <strong>Clase de la Nave:</strong> Se obtiene del comboBox, puede ser -> [Exploración, Combate, Transporte]
+      </li>
+      <li>
+        <strong>Capacidad de la Nave:</strong> Se obtiene del campo de texto, tiene que ser numérico
+      </li>
+    </ul>
+
+    <h2>3. Insertar la Nave en el Modelo</h2>
+    <p>
+      Una vez que los datos han sido validados, la nave se inserta en la base de datos
+    </p>
+
+    <h2>4. Limpiar Campos y Actualizar la Interfaz</h2>
+    <p>
+      Después de agregar la nave, los campos de la interfaz se limpian y el
+      comboBox de naves se actualiza para reflejar los cambios.
+    </p>
+  </body>
+</html>

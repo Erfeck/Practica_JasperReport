@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agregar un Tripulante</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 20px;
+      }
+      h1 {
+        color: #2c3e50;
+      }
+      h2 {
+        color: #34495e;
+      }
+      code {
+        background-color: #f4f4f4;
+        padding: 5px;
+        border-radius: 5px;
+        font-family: "Courier New", Courier, monospace;
+      }
+      .note {
+        background-color: #e8f4f8;
+        padding: 10px;
+        border-left: 5px solid #3498db;
+        margin: 10px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Agregar un Tripulante</h1>
+    <p>
+      Para agregar un tripulante en el sistema, sigue los siguientes pasos:
+    </p>
+
+    <div class="note">
+        <p>
+          <strong>Nota:</strong> Asegúrate de que todos los campos estén
+          correctamente llenados antes de intentar agregar un tripulante. Si algún
+          campo está vacío o contiene datos inválidos, el sistema mostrará un
+          mensaje de error y no se agregará el tripulante.
+        </p>
+      </div>
+
+    <h2>1. Verificar Campos Vacíos</h2>
+    <p>
+      Antes de agregar un tripulante, el sistema verifica que todos los campos
+      requeridos estén llenos. Si algún campo está vacío, se mostrará un mensaje
+      de error.
+    </p>
+
+    <h2>2. Obtener los Datos del Tripulante</h2>
+    <p>El sistema obtiene los datos del tripulante desde la interfaz de usuario:</p>
+    <ul>
+      <li>
+        <strong>Nombre del Tripulante:</strong> Se obtiene del campo de texto
+      </li>
+      <li>
+        <strong>Rango del Tripulante:</strong> Se obtiene del comboBox, puede ser -> [Capitán, Ingeniero, Piloto]
+      </li>
+      <li>
+        <strong>Nave Asignada:</strong> Se obtiene del comboBox de naves disponibles. El sistema extrae el ID de la nave seleccionada.
+      </li>
+    </ul>
+
+    <h2>3. Insertar el Tripulante en el Modelo</h2>
+    <p>
+      Una vez que los datos han sido validados, el tripulante se inserta en la base de datos junto con su rango y el ID de la nave asignada.
+    </p>
+
+    <h2>4. Limpiar Campos</h2>
+    <p>
+      Después de agregar el tripulante, los campos de la interfaz se limpian para permitir la entrada de nuevos datos.
+    </p>
+  </body>
+</html>

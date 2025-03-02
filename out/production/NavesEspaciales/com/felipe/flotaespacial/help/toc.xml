@@ -1,0 +1,20 @@
+<toc version="1.0"> 
+	<tocitem text="App Flota Espacial" target="main">
+		<tocitem text="Informes"    target="informes" />
+		
+		<tocitem text="Nave Espacial"    target="introNaveEspacial">
+			<tocitem text="Agregar Nave"    target="agregarNaveEspacial" />
+			<tocitem text="Eliminar Nave"    target="eliminarNaveEspacial" />
+		</tocitem>
+		
+		<tocitem text="Tripulante"    target="introTripulante">
+			<tocitem text="Agregar Tripulante"    target="agregarTripulante" />
+			<tocitem text="Eliminar Tripulante"    target="eliminarTripulante" />
+		</tocitem>
+		
+		<tocitem text="Misión"    target="introMision">
+			<tocitem text="Agregar Misión"    target="agregarMision" />
+			<tocitem text="Eliminar Misión"    target="eliminarMision" />
+		</tocitem>
+	</tocitem>
+</toc>

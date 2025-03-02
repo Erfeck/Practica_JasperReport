@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="com.felipe.flotaespacial.gui.Vista">
+  <grid id="27dc6" binding="panel1" default-binding="true" layout-manager="FormLayout">
+    <rowspec value="center:d:noGrow"/>
+    <colspec value="fill:544px:grow"/>
+    <constraints>
+      <xy x="20" y="20" width="544" height="400"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <tabbedpane id="f099c" binding="tabbedPane1" default-binding="true">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="200" height="200"/>
+          </grid>
+          <forms/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <grid id="e860e" layout-manager="FormLayout">
+            <rowspec value="center:max(d;4px):noGrow"/>
+            <rowspec value="top:4dlu:noGrow"/>
+            <rowspec value="center:70px:noGrow"/>
+            <rowspec value="top:4dlu:noGrow"/>
+            <rowspec value="center:70px:noGrow"/>
+            <rowspec value="top:4dlu:noGrow"/>
+            <rowspec value="center:70px:noGrow"/>
+            <rowspec value="top:4dlu:noGrow"/>
+            <rowspec value="fill:70px:noGrow"/>
+            <colspec value="fill:min(d;100px):grow"/>
+            <colspec value="left:4dlu:noGrow"/>
+            <colspec value="fill:min(d;100px):grow"/>
+            <constraints>
+              <tabbedpane title="Informes"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="faae7" class="javax.swing.JButton" binding="bInformeNaves">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                  <forms defaultalign-vert="false"/>
+                </constraints>
+                <properties>
+                  <actionCommand value="ListaNaves"/>
+                  <text value="Listado de Naves Espaciales"/>
+                </properties>
+              </component>
+              <component id="7d405" class="javax.swing.JButton" binding="bInformeTripulantes">
+                <constraints>
+                  <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                  <forms defaultalign-vert="false"/>
+                </constraints>
+                <properties>
+                  <actionCommand value="ListaTripulantes"/>
+                  <text value="Listado de Tripulantes"/>
+                </properties>
+              </component>
+              <component id="32dd9" class="javax.swing.JButton" binding="bInformeTripulantesPorNave">
+                <constraints>
+                  <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                  <forms defaultalign-vert="false"/>
+                </constraints>
+                <properties>
+                  <actionCommand value="ListaTripulantesPorNave"/>
+                  <text value="Tripulación por Nave"/>
+                </properties>
+              </component>
+              <component id="8e1d2" class="javax.swing.JButton" binding="bInformeMisionesPorEstado">
+                <constraints>
+                  <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                  <forms defaultalign-vert="false"/>
+                </constraints>
+                <properties>
+                  <actionCommand value="ListaMisionesPorEstado"/>
+                  <text value="Misiones por Estado"/>
+                </properties>
+              </component>
+              <component id="eb302" class="javax.swing.JButton" binding="bInformeMisionesDeUnaNave">
+                <constraints>
+                  <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                  <forms defaultalign-vert="false"/>
+                </constraints>
+                <properties>
+                  <actionCommand value="ListaMisionesDeUnaNave"/>
+                  <text value="Misiones de una Nave"/>
+                </properties>
+              </component>
+              <component id="aea38" class="javax.swing.JButton" binding="bInformeTripulacionPorRango">
+                <constraints>
+                  <grid row="6" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                  <forms defaultalign-vert="false"/>
+                </constraints>
+                <properties>
+                  <actionCommand value="ListaTripulaciónPorRango"/>
+                  <text value="Tripulación por Rango"/>
+                </properties>
+              </component>
+              <component id="28a96" class="javax.swing.JButton" binding="bGrafico1">
+                <constraints>
+                  <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <forms/>
+                </constraints>
+                <properties>
+                  <actionCommand value="Grafico1"/>
+                  <text value="Gráfico 1: Rango de Tripulantes"/>
+                </properties>
+              </component>
+              <component id="e2134" class="javax.swing.JButton" binding="bGrafico2">
+                <constraints>
+                  <grid row="8" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <forms/>
+                </constraints>
+                <properties>
+                  <actionCommand value="Grafico2"/>
+                  <text value="Gráfico 2: Estado de Misiones"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="cfd2e" layout-manager="FormLayout">
+            <rowspec value="center:max(d;4px):noGrow"/>
+            <rowspec value="top:4dlu:noGrow"/>
+            <rowspec value="center:d:noGrow"/>
+            <rowspec value="top:4dlu:noGrow"/>
+            <rowspec value="center:max(d;4px):noGrow"/>
+            <rowspec value="top:4dlu:noGrow"/>
+            <rowspec value="center:max(d;4px):noGrow"/>
+            <rowspec value="top:4dlu:noGrow"/>
+            <rowspec value="center:26px:grow"/>
+            <rowspec value="top:4dlu:noGrow"/>
+            <rowspec value="center:max(d;4px):noGrow"/>
+            <colspec value="fill:109px:noGrow"/>
+            <colspec value="left:4dlu:noGrow"/>
+            <colspec value="fill:104px:noGrow"/>
+            <colspec value="left:4dlu:noGrow"/>
+            <colspec value="fill:90px:noGrow"/>
+            <colspec value="left:4dlu:noGrow"/>
+            <colspec value="fill:64px:grow"/>
+            <constraints>
+              <tabbedpane title="Nave Espacial"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="394ed" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <forms/>
+                </constraints>
+                <properties>
+                  <text value="Nombre nave"/>
+                </properties>
+              </component>
+              <component id="d7448" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <forms/>
+                </constraints>
+                <properties>
+                  <text value="Clase"/>
+                </properties>
+              </component>
+              <component id="9bb6f" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <forms/>
+                </constraints>
+                <properties>
+                  <text value="Capacidad"/>
+                </properties>
+              </component>
+              <component id="af104" class="javax.swing.JTextField" binding="tfNaveNombre">
+                <constraints>
+                  <grid row="2" column="2" row-span="1" col-span="5" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                  <forms defaultalign-horz="false"/>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="c5791" class="javax.swing.JComboBox" binding="cbNaveClase">
+                <constraints>
+                  <grid row="4" column="2" row-span="1" col-span="5" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                  <forms/>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="3f9c0" class="javax.swing.JTextField" binding="tfNaveCapacidad">
+                <constraints>
+                  <grid row="6" column="2" row-span="1" col-span="5" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                  <forms defaultalign-horz="false"/>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="ec377" class="javax.swing.JButton" binding="bNaveAgregar">
+                <constraints>
+                  <grid row="10" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <forms/>
+                </constraints>
+                <properties>
+                  <actionCommand value="AgregarNave"/>
+                  <text value="Agregar"/>
+                </properties>
+              </component>
+              <component id="4b65a" class="javax.swing.JButton" binding="bNaveEliminar">
+                <constraints>
+                  <grid row="10" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <forms/>
+                </constraints>
+                <properties>
+                  <actionCommand value="EliminarNave"/>
+                  <text value="Eliminar"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="13982" layout-manager="FormLayout">
+            <rowspec value="center:max(d;4px):noGrow"/>
+            <rowspec value="top:4dlu:noGrow"/>
+            <rowspec value="center:d:noGrow"/>
+            <rowspec value="top:4dlu:noGrow"/>
+            <rowspec value="center:max(d;4px):noGrow"/>
+            <rowspec value="top:4dlu:noGrow"/>
+            <rowspec value="center:max(d;4px):noGrow"/>
+            <rowspec value="top:4dlu:noGrow"/>
+            <rowspec value="center:19px:noGrow"/>
+            <rowspec value="top:4dlu:grow"/>
+            <rowspec value="center:max(d;4px):noGrow"/>
+            <colspec value="fill:103px:noGrow"/>
+            <colspec value="left:4dlu:noGrow"/>
+            <colspec value="fill:94px:noGrow"/>
+            <colspec value="left:4dlu:noGrow"/>
+            <colspec value="fill:89px:grow"/>
+            <constraints>
+              <tabbedpane title="Tripulante"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="71474" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <forms/>
+                </constraints>
+                <properties>
+                  <text value="Nombre"/>
+                </properties>
+              </component>
+              <component id="b8870" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <forms/>
+                </constraints>
+                <properties>
+                  <text value="Rango"/>
+                </properties>
+              </component>
+              <component id="12642" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <forms/>
+                </constraints>
+                <properties>
+                  <text value="Nave asignada"/>
+                </properties>
+              </component>
+              <component id="65ab8" class="javax.swing.JTextField" binding="tfTripulanteNombre">
+                <constraints>
+                  <grid row="2" column="2" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                  <forms defaultalign-horz="false"/>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="4c33" class="javax.swing.JComboBox" binding="cbTripulanteRango">
+                <constraints>
+                  <grid row="4" column="2" row-span="1" col-span="3" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                  <forms/>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="bcd90" class="javax.swing.JComboBox" binding="cbTripulanteNaveAsignada">
+                <constraints>
+                  <grid row="6" column="2" row-span="1" col-span="3" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                  <forms/>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="4c961" class="javax.swing.JButton" binding="bTripulanteAgregar">
+                <constraints>
+                  <grid row="10" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <forms/>
+                </constraints>
+                <properties>
+                  <actionCommand value="AgregarTripulante"/>
+                  <text value="Agregar"/>
+                </properties>
+              </component>
+              <component id="7c7b0" class="javax.swing.JButton" binding="bTripulanteEliminar">
+                <constraints>
+                  <grid row="10" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <forms/>
+                </constraints>
+                <properties>
+                  <actionCommand value="EliminarTripulante"/>
+                  <text value="Eliminar"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="1c90" layout-manager="FormLayout">
+            <rowspec value="center:max(d;4px):noGrow"/>
+            <rowspec value="top:4dlu:noGrow"/>
+            <rowspec value="center:d:noGrow"/>
+            <rowspec value="top:4dlu:noGrow"/>
+            <rowspec value="center:max(d;4px):noGrow"/>
+            <rowspec value="top:4dlu:noGrow"/>
+            <rowspec value="center:144px:noGrow"/>
+            <rowspec value="top:5dlu:noGrow"/>
+            <rowspec value="center:42px:grow"/>
+            <rowspec value="top:4dlu:noGrow"/>
+            <rowspec value="center:max(d;4px):noGrow"/>
+            <colspec value="fill:108px:noGrow"/>
+            <colspec value="left:4dlu:noGrow"/>
+            <colspec value="fill:102px:noGrow"/>
+            <colspec value="left:4dlu:noGrow"/>
+            <colspec value="fill:83px:noGrow"/>
+            <colspec value="left:4dlu:noGrow"/>
+            <colspec value="fill:85px:grow"/>
+            <constraints>
+              <tabbedpane title="Misión"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="5d893" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <forms/>
+                </constraints>
+                <properties>
+                  <text value="Nave asignada"/>
+                </properties>
+              </component>
+              <component id="bb96a" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <forms/>
+                </constraints>
+                <properties>
+                  <text value="Estado"/>
+                </properties>
+              </component>
+              <component id="9ab5a" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <forms/>
+                </constraints>
+                <properties>
+                  <text value="Descripción"/>
+                </properties>
+              </component>
+              <component id="c3a88" class="javax.swing.JComboBox" binding="cbMisionNaveAsignada">
+                <constraints>
+                  <grid row="2" column="2" row-span="1" col-span="5" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                  <forms/>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="2de57" class="javax.swing.JComboBox" binding="cbMisionEstado">
+                <constraints>
+                  <grid row="4" column="2" row-span="1" col-span="5" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                  <forms/>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="6cc94" class="javax.swing.JButton" binding="bMisionAgregar">
+                <constraints>
+                  <grid row="10" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <forms/>
+                </constraints>
+                <properties>
+                  <actionCommand value="AgregarMision"/>
+                  <text value="Agregar"/>
+                </properties>
+              </component>
+              <component id="b1ecf" class="javax.swing.JButton" binding="bMisionEliminar">
+                <constraints>
+                  <grid row="10" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <forms/>
+                </constraints>
+                <properties>
+                  <actionCommand value="EliminarMision"/>
+                  <text value="Eliminar"/>
+                </properties>
+              </component>
+              <scrollpane id="2b1f">
+                <constraints>
+                  <grid row="6" column="2" row-span="1" col-span="5" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                  <forms defaultalign-horz="false" defaultalign-vert="false"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="e93df" class="javax.swing.JTextArea" binding="taMisionDescripcion">
+                    <constraints/>
+                    <properties/>
+                  </component>
+                </children>
+              </scrollpane>
+            </children>
+          </grid>
+        </children>
+      </tabbedpane>
+    </children>
+  </grid>
+</form>
